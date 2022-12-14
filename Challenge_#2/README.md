@@ -1,4 +1,4 @@
-#SSH to the vm and run the below curl command
+#SSH to the vm and run the curl command
 
 #Default output will be in the json format only, however "alt" is the option to provide input in required format
 
