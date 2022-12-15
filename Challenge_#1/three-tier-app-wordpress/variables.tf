@@ -6,7 +6,6 @@ variable "machine_type" {
 
 variable "project_name" {
   type        = string
-  default     = "infra-mod-training"
   description = "enter your project name"
 }
 
