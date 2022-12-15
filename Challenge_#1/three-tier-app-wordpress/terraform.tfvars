@@ -8,8 +8,8 @@ maximum_instances   = "3"
 
 ##database
 data_base_version	= "MYSQL_8_0"
-db_password		= "admin"
-db_username		= "Admin@123#$"
+db_password		= "Admin@123#$"
+db_username		= "admin"
 db_name			= "wp_app_db"
 availability_type	= "ZONAL"
 
