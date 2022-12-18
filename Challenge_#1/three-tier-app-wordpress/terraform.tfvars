@@ -7,7 +7,7 @@ minimum_instances	= "1"
 maximum_instances   = "3"
 
 ##database
-data_base_version	= "MYSQL_8_0"
+data_base_version	= "MYSQL_5_6"
 db_password		= "plomssed"
 db_username		= "admin"
 db_name			= "wp_app_db"
