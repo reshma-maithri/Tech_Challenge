@@ -69,13 +69,6 @@ resource "google_compute_instance_template" "compute-engine" {
 
   }
 }
-#creating a target pool
-
-resource "google_compute_target_pool" "wordpress" {
-  name    = var.targetpool_name
-  project = var.project_name
-  region  = var.region
-}
 
 #creating a group manager for the instances.
 resource "google_compute_instance_group_manager" "wp-igm" {
@@ -86,7 +79,7 @@ resource "google_compute_instance_group_manager" "wp-igm" {
     instance_template = google_compute_instance_template.compute-engine.self_link
     name              = "primary"
   }
-  target_pools       = [google_compute_target_pool.wordpress.self_link]
+  target_pools       = [module.lb.target_pool]
   base_instance_name = "wordpress"
 }
 
