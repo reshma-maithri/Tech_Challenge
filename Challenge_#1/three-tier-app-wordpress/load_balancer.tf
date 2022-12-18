@@ -6,6 +6,6 @@ module "lb" {
   region       = var.region
   name         = var.lb_name
   service_port = 80
-  target_tags  = [var.targetpool_name]
+  target_tags  = ["wordpress-firewall"]
   network      = google_compute_network.vpc-network-wp.name
 }
